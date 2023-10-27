@@ -10,11 +10,12 @@ class Program
         bool parola_verif = false;
         Console.WriteLine("Buna ziua! Intrduceti aici user-ul si parola" + '\n');
 
-        while (user_verif==false & parola_verif==false)
+        while (user_verif==false && parola_verif==false
+            || user_verif==true && parola_verif==false
+            || user_verif == false && parola_verif == true)
         {
             Console.WriteLine("Username: ");
             string user_citit = Console.ReadLine();
-            Console.WriteLine('\n');
             Console.WriteLine("Password: ");
             string parola_citita = Console.ReadLine();
             user_verif = string.Equals(user_citit, user);
