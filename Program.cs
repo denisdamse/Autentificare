@@ -4,8 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        string user = "denisdamse";
-        string parola = "info2026";
+        const string user = "denisdamse";
+        const string parola = "info2026";
         bool user_verif = false;
         bool parola_verif = false;
         Console.WriteLine("Buna ziua! Intrduceti aici user-ul si parola" + '\n');
